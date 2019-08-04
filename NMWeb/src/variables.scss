@@ -4,11 +4,10 @@ $toolbar-height: 45px;
 $toolbar-height-mobile: 40px;
 $footer-height: 30px;
 
-
 /*********************
 BREAKPOINTS the same as in the angular/flex-layout except "mobile" point
 *********************/
-  /*
+/*
   Place the below code into sass file and set the $point
    @include breakpoint(breakpointname) {
       // Styles //
@@ -20,84 +19,57 @@ BREAKPOINTS the same as in the angular/flex-layout except "mobile" point
     @media screen and (max-width: 700px) {
       @content;
     }
-  }
-
-  @else if $point==xs {
+  } @else if $point==xs {
     @media screen and (max-width: 599px) {
       @content;
     }
-  }
-
-  @else if $point==sm {
+  } @else if $point==sm {
     @media screen and (min-width: 600px) and (max-width: 959px) {
       @content;
     }
-  }
-
-  @else if $point==md {
+  } @else if $point==md {
     @media screen and (min-width: 960px) and (max-width: 1279px) {
       @content;
     }
-  }
-
-  @else if $point==lg {
+  } @else if $point==lg {
     @media screen and (min-width: 1280px) and (max-width: 1919px) {
       @content;
     }
-  }
-
-  @else if $point==xl {
+  } @else if $point==xl {
     @media screen and (min-width: 1920px) and (max-width: 5000px) {
       @content;
     }
-  }
-
-  @else if $point==lt-sm {
+  } @else if $point==lt-sm {
     @media screen and (max-width: 599px) {
       @content;
     }
-  }
-
-  @else if $point==lt-md {
+  } @else if $point==lt-md {
     @media screen and (max-width: 959px) {
       @content;
     }
-  }
-
-  @else if $point==lt-lg {
+  } @else if $point==lt-lg {
     @media screen and (max-width: 1279px) {
       @content;
     }
-  }
-
-  @else if $point==lt-xl {
+  } @else if $point==lt-xl {
     @media screen and (max-width: 1919px) {
       @content;
     }
-  }
-
-  @else if $point==gt-xs {
+  } @else if $point==gt-xs {
     @media screen and (min-width: 600px) {
       @content;
     }
-  }
-
-  @else if $point==gt-sm {
+  } @else if $point==gt-sm {
     @media screen and (min-width: 960px) {
       @content;
     }
-  }
-
-  @else if $point==gt-md {
+  } @else if $point==gt-md {
     @media screen and (min-width: 1280px) {
       @content;
     }
-  }
-
-  @else if $point==gt-lg {
+  } @else if $point==gt-lg {
     @media screen and (min-width: 1920px) {
       @content;
     }
   }
 }
-
