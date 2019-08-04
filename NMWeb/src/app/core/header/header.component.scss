@@ -1,14 +1,13 @@
-$tool-bar-height: 5vh;
+@import '~variables.scss';
 
 .tf-icon {
-  height: 4vh;
+  height: 30px;
   margin-left: 10px;
 }
 
 .betta-icon {
   color: white;
   font-family: serif;
-  font-size: 3vh;
 }
 
 .toolbar-icon {
@@ -25,7 +24,7 @@ $tool-bar-height: 5vh;
 
 .mat-toolbar {
   width: 100%;
-  height: $tool-bar-height;
+  height: $toolbar-height;
   padding-right: 0;
   user-select: none;
   //background: rgba(255, 255, 255, 0.75);
@@ -55,9 +54,9 @@ mat-toolbar {
   z-index: 100;
 }
 
-@media only screen and (max-width: 600px) {
+@include breakpoint(mobile) {
   .mat-toolbar {
-    height: 40px !important;
+    height: $toolbar-height-mobile !important;
   }
 
   .tf-icon {
@@ -65,7 +64,7 @@ mat-toolbar {
   }
 
   button {
-    height: 40px !important;
+    height: $toolbar-height-mobile !important;
   }
 
   .betta-icon {

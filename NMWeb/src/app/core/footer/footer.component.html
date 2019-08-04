@@ -1,5 +1,5 @@
-<footer>
-    <div class="legal">
+<footer fxLayout fxLayoutAlign="space-between center ">
+    <div class="legal" fxLayout>
       <span>
         <a routerLink="/terms" routerLinkActive="active">Términos de uso</a>
       </span>
@@ -9,22 +9,20 @@
       </span>
     </div>
 
-    <div class="contact">
-      <span class="mail">
+    <div class="contact" fxLayout>
+      <span class="mail" fxLayout fxLayoutAlign="center center">
         <a href="mailto:contact@topicfriends.org">
           contact@topicfriends.org
         </a>
       </span>
-      <a class="facebook" href="https://www.facebook.com/TopicFriends/" >
-        <span>
+      <span class="icons" fxLayout>
+        <a class="facebook" href="https://www.facebook.com/TopicFriends/" fxLayout fxLayoutAlign="center center">
           <i class="fa fa-facebook"></i>
-        </span>
-      </a>
-      <a class="medium" href="https://medium.com/@topicfriends" >
-        <span>
+        </a>
+        <a class="medium" href="https://medium.com/@topicfriends" fxLayout fxLayoutAlign="center center">
           <i class="fa fa-medium"></i>
-        </span>
-      </a>
+        </a>
+      </span>
     </div>
 
 </footer>

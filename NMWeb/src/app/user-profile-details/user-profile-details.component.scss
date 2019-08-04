@@ -1,3 +1,5 @@
+@import '~variables.scss';
+
 mat-form-field {
   /*width: 300px;*/
   width: 100%;
@@ -16,8 +18,8 @@ mat-form-field {
 .save-fab {
   position: fixed;
   z-index: 2;
-  top: calc(100vh - 120px);
-  left: calc(100vw - 100px);
+  bottom: calc(#{$footer-height} + 20px);
+  right: 30px;
 }
 
 .saveProfileButton {
@@ -25,11 +27,11 @@ mat-form-field {
   margin-left: 10%;
 }
 
-@media only screen and (max-width: 600px) {
+@include breakpoint(mobile) {
   .save-fab {
     position: fixed;
     z-index: 2;
-    top: calc(100vh - 80px);
-    left: calc(100vw - 80px);
+    bottom: 20px;
+    right: 20px;
   }
 }
