@@ -28,9 +28,8 @@
   padding-right: 0;
   user-select: none;
   //background: rgba(255, 255, 255, 0.75);
-  background: rgba(0, 0, 0, 1);
+  background: transparent;
   color: black;
-  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
 
   a {
     text-decoration: none;
@@ -42,15 +41,12 @@
   }
 }
 
-.menu-button {
-  margin-left: -10px;
-}
 
 
 mat-toolbar {
-  //margin-left: 10px !important;
-  padding-left: 10px !important;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 100;
 }
 
@@ -59,15 +55,9 @@ mat-toolbar {
     height: $toolbar-height-mobile !important;
   }
 
-  .tf-icon {
-    height: 30px !important;
-  }
 
   button {
     height: $toolbar-height-mobile !important;
   }
 
-  .betta-icon {
-    font-size: 25px !important;
-  }
 }
